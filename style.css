@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'EB Garamond', serif;
+}
+
+
+
+body{
+    background-color: aliceblue;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.subBox{
+    height: 70px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.logoBox{
+    width: 400px;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+    line-height: 60px;
+    color: black;
+}
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.inputBox > input{
+    width: 80%;
+    max-width: 400px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.inputBox > input:hover{
+    padding-left: 12px;
+    border: none;
+    background-color: beige;
+}
+
+.sideBox{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.sideBox > ul > li{
+    width: 150px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.sideBox > ul > li > ul{
+    width: 150px;
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+}
+
+.sideBox > ul > li > ul > li{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sideBox > ul > li:hover > ul{
+    display: block;
+    z-index: 1;
+}
+
+.sideBox > ul > li > ul > li:hover{
+    background: antiquewhite;
+}
+
+.iconBox{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.iconBox img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.imgBox{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    padding: 1px;
+    position: relative;
+}
+
+.imgBox h3{
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 800;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    top: 20%;
+}
+
+.imgBox p{
+    color: aliceblue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    top: 35%;
+}
+
+.imgBox button{
+    padding: 15px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    top: 60%;
+}
+
+.imgBox button a{
+    color: black;
+}
+
+.imgBox button:hover{
+    cursor: pointer;
+    font-size: 21px;
+    border: 3px solid black;
+}
+
+.textBox{
+    width: 60%;
+    background-color: #eee;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    padding: 20px;
+    margin: auto;
+}
+
+.textBox p{
+    font-size: 15px;
+}

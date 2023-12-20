@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <h1 id="hello">안녕하세요</h1>
+    <div class="alertBox" id="alertBox">알림창<button onclick="document.getElementById('alertBox').style.display = 'none';">닫기</button></div>
+    <button onclick="document.getElementById('alertBox').style.display = 'block';">버튼</button>
 
-    <script>
-        document.getElementById('hello').innerHTML = '안녕';
-        document.getElementById('hello').style.fontSize = '16px';
-    </script>
+    
 
 </body>
 </html>

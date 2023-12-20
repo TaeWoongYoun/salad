@@ -11,10 +11,17 @@
 </head>
 <body>
     
-    <div class="alertBox" id="alertBox">알림창<button onclick="닫기()">닫기</button></div>
-    <button onclick="열기()">버튼</button>
+    <div class="alertBox" id="alertBox">알림창
+        <button onclick="버튼('none')">닫기</button>
+        <!-- onclick = 버튼을 눌렀을 때 자바스크립트 코드를 실행 -->
+    </div>
+    <div id="btnBox">
+        <button onclick="버튼('block')">열기</button>
+        <button onclick="텍스트('아이디를 입력하세요')">버튼1</button>
+        <button onclick="텍스트('비밀번호를 입력하세요')">버튼2</button>
+    </div>
 
-    
+                            
 
 </body>
 </html>
